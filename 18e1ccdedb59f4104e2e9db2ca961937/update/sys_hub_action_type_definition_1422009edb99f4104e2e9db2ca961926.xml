@@ -1,0 +1,3393 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template>DATASTREAM</action_template>
+        <active>true</active>
+        <annotation>World Glaciers Data Stream Action exercises</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This Data Stream Action interacts with the World Glaciers web service to get latitude and longitude information about glaciers.</description>
+        <ih_action>false</ih_action>
+        <internal_name>world_glaciers__latlong</internal_name>
+        <label_cache>[{"name":"{{action.first_glacier}}","label":"action➛First glacier","type":"action","ref":""},{"name":"{{action.glaciers_per_page}}","label":"action➛Glaciers per page","type":"action","ref":""},{"name":"{{action.pages_to_get}}","label":"action➛Pages to get","type":"action","ref":""},{"name":"{{step[6cbdeea3-fadf-4903-81d0-3d3c91003123].variable}}","label":"step➛Data Validation➛variable","type":"step","ref":""},{"name":"{{step[6cbdeea3-fadf-4903-81d0-3d3c91003123].first_glacier_to_get}}","label":"step➛Data Validation➛First glacier to get","type":"step","ref":""},{"name":"{{step[6cbdeea3-fadf-4903-81d0-3d3c91003123].glaciers_per_page}}","label":"step➛Data Validation➛Glaciers per page","type":"step","ref":""},{"name":"{{step[6cbdeea3-fadf-4903-81d0-3d3c91003123].number_of_pages}}","label":"step➛Data Validation➛Number of pages","type":"step","ref":""},{"name":"{{step[7af1bacb-da72-425d-a205-0be6f66cdae1].glacier_number}}","label":"step➛Pagination Setup step➛glacier_number","type":"step","ref":""},{"name":"{{step[7af1bacb-da72-425d-a205-0be6f66cdae1].glaciers_per_page}}","label":"step➛Pagination Setup step➛glaciers_per_page","type":"step","ref":""}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>World Glaciers - LatLong</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:46:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1422009edb99f4104e2e9db2ca961926</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>World Glaciers - LatLong</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_1422009edb99f4104e2e9db2ca961926</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:30:56</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=1422009edb99f4104e2e9db2ca961926"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1422009edb99f4104e2e9db2ca961926"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>1422009edb99f4104e2e9db2ca961926</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:30:00</sys_created_on>
+        <sys_id>d83c809adbd9f4104e2e9db2ca9619f4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:30:56</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"country":{"$cv":{"$c":"java.lang.String","$v":""}},"latitude":{"$cv":{"$c":"java.lang.String","$v":""}},"name":{"$cv":{"$c":"java.lang.String","$v":""}},"id":{"$cv":{"$c":"java.lang.String","$v":""}},"longitude":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD803c809aead9f4102402ae5737299ab4":{"country":"String","country.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Country\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"latitude":"String","latitude.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"Latitude\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"ID\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"0\"}"},"longitude":"String","longitude.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"Longitude\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"}},"FlowDesigner:FD803c809aead9f4102402ae5737299ab4.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Glacier record\",\"mandatory\":\"false\",\"uiUniqueId\":\"bded53bb-1c5e-48f6-b428-85bf59666c03\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD803c809aead9f4102402ae5737299ab4\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"12\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Glacier record">843c809adbd9f4104e2e9db2ca9619d5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1422009edb99f4104e2e9db2ca961926"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ds_parsed_stream</field>
+        <id>1422009edb99f4104e2e9db2ca961926</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:44</sys_created_on>
+        <sys_id>a8ca8c1adbd9f4104e2e9db2ca961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:23:44</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</table>
+        <value>{{step[a5dd946f-af4d-4347-bde2-e553e053b3af].parsed_stream}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_code</field>
+        <id>1422009edb99f4104e2e9db2ca961926</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:39</sys_created_on>
+        <sys_id>c5660056dbd9f4104e2e9db2ca96192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:39</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</table>
+        <value>{{step[57922c91-13a1-41c2-90ed-b986ff0244fd].error_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>1422009edb99f4104e2e9db2ca961926</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:39</sys_created_on>
+        <sys_id>8d660056dbd9f4104e2e9db2ca961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:39</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</table>
+        <value>{{step[57922c91-13a1-41c2-90ed-b986ff0244fd].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>glacier_record</field>
+        <id>1422009edb99f4104e2e9db2ca961926</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:30:00</sys_created_on>
+        <sys_id>583c809adbd9f4104e2e9db2ca9619f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:30:00</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_headers</field>
+        <id>1422009edb99f4104e2e9db2ca961926</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:39</sys_created_on>
+        <sys_id>41660056dbd9f4104e2e9db2ca96192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:39</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</table>
+        <value>{{step[57922c91-13a1-41c2-90ed-b986ff0244fd].response_headers}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>1422009edb99f4104e2e9db2ca961926</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:39</sys_created_on>
+        <sys_id>05660056dbd9f4104e2e9db2ca96192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:39</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</table>
+        <value>{{step[57922c91-13a1-41c2-90ed-b986ff0244fd].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=1422009edb99f4104e2e9db2ca961926^sys_idNOT IN20ca4c1adbd9f4104e2e9db2ca9619ad,36f38c92dbd9f4104e2e9db2ca96195b,3bb24c52dbd9f4104e2e9db2ca961922,7066cc16dbd9f4104e2e9db2ca9619d1,73b24c52dbd9f4104e2e9db2ca96191d,7c66cc16dbd9f4104e2e9db2ca9619af,dcca4c1adbd9f4104e2e9db2ca9619a5,e866cc16dbd9f4104e2e9db2ca96199d"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</action>
+        <cid>a5dd946f-af4d-4347-bde2-e553e053b3af</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Script Parser step</label>
+        <order>8</order>
+        <outputs/>
+        <section>DATASTREAM_PARSING</section>
+        <step_type display_value="Script Parser">e83b26f68723230057a8ed4d87cb0b24</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:44</sys_created_on>
+        <sys_id>20ca4c1adbd9f4104e2e9db2ca9619ad</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:28:13</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=20ca4c1adbd9f4104e2e9db2ca9619ad"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>20ca4c1adbd9f4104e2e9db2ca9619ad</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:44</sys_created_on>
+        <sys_id>a4ca4c1adbd9f4104e2e9db2ca9619b2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:28:13</sys_updated_on>
+        <value>(function parse(inputs, outputs) {
+
+// Source item string is available in inputs.sourceItem.
+// Generate output by setting fields of outputs.targetObject.
+// 
+// The structure of outputs.targetObject corresponds to the
+// structure defined in the Data Stream Action output.
+
+// Parse glacier record properties into the outputs.targetObject
+// that is passed to the Data Stream Action Outputs.
+ var glacier_rec = JSON.parse(inputs.sourceItem);
+ outputs.targetObject.id = glacier_rec.glacier_id;
+ outputs.targetObject.name = glacier_rec.name;
+ outputs.targetObject.country = glacier_rec.country;
+ outputs.targetObject.latitude = glacier_rec.latitude;
+ outputs.targetObject.longitude = glacier_rec.longitude;
+
+})(inputs, outputs);</value>
+        <variable display_value="Script">688bea3e8723230057a8ed4d87cb0b05</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=20ca4c1adbd9f4104e2e9db2ca9619ad"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>20ca4c1adbd9f4104e2e9db2ca9619ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:44</sys_created_on>
+        <sys_id>24ca4c1adbd9f4104e2e9db2ca9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:23:44</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_e83b26f68723230057a8ed4d87cb0b24</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>split_stream</field>
+        <id>20ca4c1adbd9f4104e2e9db2ca9619ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:44</sys_created_on>
+        <sys_id>60ca4c1adbd9f4104e2e9db2ca9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:23:44</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_e83b26f68723230057a8ed4d87cb0b24</table>
+        <value>{{step[c5686732-6637-415b-b7ce-56a73505ef4d].split_stream}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</action>
+        <cid>6cbdeea3-fadf-4903-81d0-3d3c91003123</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Data Validation</label>
+        <order>2</order>
+        <outputs/>
+        <section>DATASTREAM_PREPROCESS</section>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:54:07</sys_created_on>
+        <sys_id>36f38c92dbd9f4104e2e9db2ca96195b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:56:20</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=36f38c92dbd9f4104e2e9db2ca96195b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>36f38c92dbd9f4104e2e9db2ca96195b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:55:28</sys_created_on>
+        <sys_id>264480d2dbd9f4104e2e9db2ca9619ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:55:28</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>36f38c92dbd9f4104e2e9db2ca96195b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:55:28</sys_created_on>
+        <sys_id>624480d2dbd9f4104e2e9db2ca9619ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:55:28</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>36f38c92dbd9f4104e2e9db2ca96195b</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:54:08</sys_created_on>
+        <sys_id>7af38c92dbd9f4104e2e9db2ca961973</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:56:20</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+    // If the ordinal number of pages to get (inputs.first_glacier) value   
+    // is zero or less than zero, or if the ordinal number is greater than 
+    // the number of glacier records in the database, set 
+    // outputs.first_glacer_to_get to the string value 1.  If not, set the 
+    // value of first_glacer_to_get to inputs.first_glacier.
+    if (parseInt(inputs.first_glacier) &lt;= 0 || parseInt(inputs.first_glacier) &gt; 132890) {
+        outputs.first_glacier_to_get = "1";
+    } else {
+        outputs.first_glacier_to_get = inputs.first_glacier;
+    }
+
+    // The World Glaciers web service returns a 442 error if the page 
+    // size is not between 1 and 10 inclusive. To avoid receiving an 
+    // error, check the value of the page size (inputs.glaciers_per_page).  
+    // If the value is outside of the allowed range, set 
+    // outputs.glaciers_per_page to the string value 1.  Otherwise, 
+    // set outputs.glaciers_per_page to inputs.glaciers_per_page.
+
+    if (parseInt(inputs.glaciers_per_page) &lt;= 0 || parseInt(inputs.glaciers_per_page) &gt; 10) {
+        outputs.glaciers_per_page = "1";
+    } else {
+        outputs.glaciers_per_page = inputs.glaciers_per_page;
+    }
+
+
+    // If the number of pages to get (inputs.pages_to_get) value is zero   
+    // or less than zero, set outputs.number_of_pages to the string 
+    // value 1. If not, set the value of outputs.number_of_pages to 
+    // inputs.pages_to_get.
+    if (parseInt(inputs.pages_to_get) &lt;= 0) {
+        outputs.number_of_pages = "1";
+    } else {
+        outputs.number_of_pages = inputs.pages_to_get;
+    }
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>36f38c92dbd9f4104e2e9db2ca96195b</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:55:28</sys_created_on>
+        <sys_id>ae4480d2dbd9f4104e2e9db2ca9619ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:55:28</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=36f38c92dbd9f4104e2e9db2ca96195b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>36f38c92dbd9f4104e2e9db2ca96195b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:55:28</sys_created_on>
+        <sys_id>ea4480d2dbd9f4104e2e9db2ca9619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:55:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>first_glacier</field>
+        <id>36f38c92dbd9f4104e2e9db2ca96195b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:54:08</sys_created_on>
+        <sys_id>3af38c92dbd9f4104e2e9db2ca961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:54:08</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_36f38c92dbd9f4104e2e9db2ca96195b</table>
+        <value>{{action.first_glacier}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>glaciers_per_page</field>
+        <id>36f38c92dbd9f4104e2e9db2ca96195b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:54:08</sys_created_on>
+        <sys_id>faf38c92dbd9f4104e2e9db2ca961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:54:08</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_36f38c92dbd9f4104e2e9db2ca96195b</table>
+        <value>{{action.glaciers_per_page}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection</field>
+        <id>36f38c92dbd9f4104e2e9db2ca96195b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:55:28</sys_created_on>
+        <sys_id>2a4480d2dbd9f4104e2e9db2ca9619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:55:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>36f38c92dbd9f4104e2e9db2ca96195b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:55:28</sys_created_on>
+        <sys_id>ae4480d2dbd9f4104e2e9db2ca9619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:55:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>pages_to_get</field>
+        <id>36f38c92dbd9f4104e2e9db2ca96195b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:54:08</sys_created_on>
+        <sys_id>76f38c92dbd9f4104e2e9db2ca961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:54:08</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_36f38c92dbd9f4104e2e9db2ca96195b</table>
+        <value>{{action.pages_to_get}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>36f38c92dbd9f4104e2e9db2ca96195b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:54:08</sys_created_on>
+        <sys_id>f6f38c92dbd9f4104e2e9db2ca961973</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:54:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=36f38c92dbd9f4104e2e9db2ca96195b^sys_idNOT IN36f38c92dbd9f4104e2e9db2ca961962,36f38c92dbd9f4104e2e9db2ca961967,3af38c92dbd9f4104e2e9db2ca96196b"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>first_glacier</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Data Validation">36f38c92dbd9f4104e2e9db2ca96195b</model>
+        <model_id>36f38c92dbd9f4104e2e9db2ca96195b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_36f38c92dbd9f4104e2e9db2ca96195b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:54:07</sys_created_on>
+        <sys_id>36f38c92dbd9f4104e2e9db2ca961962</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:54:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>glaciers_per_page</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Data Validation">36f38c92dbd9f4104e2e9db2ca96195b</model>
+        <model_id>36f38c92dbd9f4104e2e9db2ca96195b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_36f38c92dbd9f4104e2e9db2ca96195b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:54:08</sys_created_on>
+        <sys_id>36f38c92dbd9f4104e2e9db2ca961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:54:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>pages_to_get</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Data Validation">36f38c92dbd9f4104e2e9db2ca96195b</model>
+        <model_id>36f38c92dbd9f4104e2e9db2ca96195b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_36f38c92dbd9f4104e2e9db2ca96195b</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:54:08</sys_created_on>
+        <sys_id>3af38c92dbd9f4104e2e9db2ca96196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:54:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=36f38c92dbd9f4104e2e9db2ca96195b^sys_idNOT IN2e4480d2dbd9f4104e2e9db2ca9619ca,a24480d2dbd9f4104e2e9db2ca9619c5,aa4480d2dbd9f4104e2e9db2ca9619be"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dfd3088c-fa1b-4202-b0bc-522c25959465</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>number_of_pages</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Number of pages</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Data Validation">36f38c92dbd9f4104e2e9db2ca96195b</model>
+        <model_id>36f38c92dbd9f4104e2e9db2ca96195b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_36f38c92dbd9f4104e2e9db2ca96195b</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:55:28</sys_created_on>
+        <sys_id>2e4480d2dbd9f4104e2e9db2ca9619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:55:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c621abb9-3712-4cfc-9338-cf705d58ce31</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>glaciers_per_page</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Glaciers per page</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Data Validation">36f38c92dbd9f4104e2e9db2ca96195b</model>
+        <model_id>36f38c92dbd9f4104e2e9db2ca96195b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_36f38c92dbd9f4104e2e9db2ca96195b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:55:28</sys_created_on>
+        <sys_id>a24480d2dbd9f4104e2e9db2ca9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:55:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=de82ac8a-8e87-4cfb-bcaa-5d12bbaeab53</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>first_glacier_to_get</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>First glacier to get</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Data Validation">36f38c92dbd9f4104e2e9db2ca96195b</model>
+        <model_id>36f38c92dbd9f4104e2e9db2ca96195b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_36f38c92dbd9f4104e2e9db2ca96195b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:55:28</sys_created_on>
+        <sys_id>aa4480d2dbd9f4104e2e9db2ca9619be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:55:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</action>
+        <cid>8feaeeb9-7391-4285-87f3-33debcca7ee8</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Request</label>
+        <order>3</order>
+        <outputs/>
+        <section>DATASTREAM_REQUEST</section>
+        <step_type display_value="Request">21ba87afcbfa2300a2fcb895634c9c3d</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:44</sys_created_on>
+        <sys_id>3bb24c52dbd9f4104e2e9db2ca961922</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:38</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3bb24c52dbd9f4104e2e9db2ca961922"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3bb24c52dbd9f4104e2e9db2ca961922</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>2866cc16dbd9f4104e2e9db2ca96199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:38</sys_updated_on>
+        <value>rest_step</value>
+        <variable display_value="How will you get data">d61d64d677032300efb691572b10611a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3bb24c52dbd9f4104e2e9db2ca961922</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>6466cc16dbd9f4104e2e9db2ca96199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:38</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable pagination">88ad28d677032300efb691572b10619b</variable>
+    </sys_variable_value>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</action>
+        <cid>c4c8fe66-d4f9-4043-8d75-42e57f8aaaed</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Parsing</label>
+        <order>6</order>
+        <outputs/>
+        <section>DATASTREAM_PARSING</section>
+        <step_type display_value="Parsing">1f1b8bafcbfa2300a2fcb895634c9c33</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>7066cc16dbd9f4104e2e9db2ca9619d1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:23:43</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7066cc16dbd9f4104e2e9db2ca9619d1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7066cc16dbd9f4104e2e9db2ca9619d1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:43</sys_created_on>
+        <sys_id>5cca4c1adbd9f4104e2e9db2ca9619a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:23:43</sys_updated_on>
+        <value>json_splitter</value>
+        <variable display_value="How will you identify each record">d52e2cd677032300efb691572b1061e4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7066cc16dbd9f4104e2e9db2ca9619d1</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:43</sys_created_on>
+        <sys_id>98ca4c1adbd9f4104e2e9db2ca9619a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:23:43</sys_updated_on>
+        <value>script_parser</value>
+        <variable display_value="How will you parse each item into an object">ae4eacd677032300efb691572b106156</variable>
+    </sys_variable_value>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</action>
+        <cid>7316fe38-a9be-44ae-a896-4e791683cc24</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Action Preprocessing</label>
+        <order>1</order>
+        <outputs/>
+        <section>DATASTREAM_PREPROCESS</section>
+        <step_type display_value="Action Preprocessing">235a47afcbfa2300a2fcb895634c9c04</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:44</sys_created_on>
+        <sys_id>73b24c52dbd9f4104e2e9db2ca96191d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:54:07</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=73b24c52dbd9f4104e2e9db2ca96191d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>73b24c52dbd9f4104e2e9db2ca96191d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:54:07</sys_created_on>
+        <sys_id>faf38c92dbd9f4104e2e9db2ca961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:54:07</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable preprocessing script">2a6c20d677032300efb691572b106183</variable>
+    </sys_variable_value>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</action>
+        <cid>57922c91-13a1-41c2-90ed-b986ff0244fd</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>5</order>
+        <outputs/>
+        <section>DATASTREAM_REQUEST</section>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>7c66cc16dbd9f4104e2e9db2ca9619af</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:08:46</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7c66cc16dbd9f4104e2e9db2ca9619af"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c66cc16dbd9f4104e2e9db2ca9619af</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:08:46</sys_created_on>
+        <sys_id>1557cc56dbd9f4104e2e9db2ca9619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:08:46</sys_updated_on>
+        <value>/api/x_snc_world_glacie/v1/world_glaciers/getglaciers/latlong</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c66cc16dbd9f4104e2e9db2ca9619af</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:05:46</sys_created_on>
+        <sys_id>19a60456dbd9f4104e2e9db2ca961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:05:46</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c66cc16dbd9f4104e2e9db2ca9619af</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>3866cc16dbd9f4104e2e9db2ca9619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:38</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Is Streaming">f1255aa377322300efb691572b106135</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c66cc16dbd9f4104e2e9db2ca9619af</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>bc66cc16dbd9f4104e2e9db2ca9619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:38</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c66cc16dbd9f4104e2e9db2ca9619af</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:08:46</sys_created_on>
+        <sys_id>d557cc56dbd9f4104e2e9db2ca9619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:08:46</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c66cc16dbd9f4104e2e9db2ca9619af</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:05:46</sys_created_on>
+        <sys_id>d9a60456dbd9f4104e2e9db2ca961959</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:08:46</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c66cc16dbd9f4104e2e9db2ca9619af</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>f866cc16dbd9f4104e2e9db2ca9619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:38</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7c66cc16dbd9f4104e2e9db2ca9619af"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>7c66cc16dbd9f4104e2e9db2ca9619af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>b466cc16dbd9f4104e2e9db2ca9619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>7c66cc16dbd9f4104e2e9db2ca9619af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>f066cc16dbd9f4104e2e9db2ca9619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>7c66cc16dbd9f4104e2e9db2ca9619af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:08:46</sys_created_on>
+        <sys_id>dd57cc56dbd9f4104e2e9db2ca9619b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:08:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>7c66cc16dbd9f4104e2e9db2ca9619af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:05:46</sys_created_on>
+        <sys_id>d1a60456dbd9f4104e2e9db2ca961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:05:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>is_streaming</field>
+        <id>7c66cc16dbd9f4104e2e9db2ca9619af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>3066cc16dbd9f4104e2e9db2ca9619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>7c66cc16dbd9f4104e2e9db2ca9619af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:05:46</sys_created_on>
+        <sys_id>95a60456dbd9f4104e2e9db2ca961959</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:08:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"first_rec","value":"{{step[7af1bacb-da72-425d-a205-0be6f66cdae1].glacier_number}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"num_recs_per_page","value":"{{step[7af1bacb-da72-425d-a205-0be6f66cdae1].glaciers_per_page}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>7c66cc16dbd9f4104e2e9db2ca9619af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:08:46</sys_created_on>
+        <sys_id>1d57cc56dbd9f4104e2e9db2ca9619b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:08:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</action>
+        <cid>c5686732-6637-415b-b7ce-56a73505ef4d</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Splitter step</label>
+        <order>7</order>
+        <outputs/>
+        <section>DATASTREAM_PARSING</section>
+        <step_type display_value="Splitter">f4fe7504e713230007a64caac2f6a9d0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:43</sys_created_on>
+        <sys_id>dcca4c1adbd9f4104e2e9db2ca9619a5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:23:44</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=dcca4c1adbd9f4104e2e9db2ca9619a5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>dcca4c1adbd9f4104e2e9db2ca9619a5</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:44</sys_created_on>
+        <sys_id>6cca4c1adbd9f4104e2e9db2ca9619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:23:44</sys_updated_on>
+        <value>$.result.glaciers</value>
+        <variable display_value="Item Path">1d614244e713230007a64caac2f6a989</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>dcca4c1adbd9f4104e2e9db2ca9619a5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:44</sys_created_on>
+        <sys_id>a8ca4c1adbd9f4104e2e9db2ca9619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:23:44</sys_updated_on>
+        <value>JSON</value>
+        <variable display_value="Source Format">56c04e04e713230007a64caac2f6a9e3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=dcca4c1adbd9f4104e2e9db2ca9619a5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>item_path</field>
+        <id>dcca4c1adbd9f4104e2e9db2ca9619a5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:44</sys_created_on>
+        <sys_id>28ca4c1adbd9f4104e2e9db2ca9619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:23:44</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_f4fe7504e713230007a64caac2f6a9d0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>split_using</field>
+        <id>dcca4c1adbd9f4104e2e9db2ca9619a5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:44</sys_created_on>
+        <sys_id>a0ca4c1adbd9f4104e2e9db2ca9619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:23:44</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_f4fe7504e713230007a64caac2f6a9d0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>stream</field>
+        <id>dcca4c1adbd9f4104e2e9db2ca9619a5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:44</sys_created_on>
+        <sys_id>64ca4c1adbd9f4104e2e9db2ca9619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:23:44</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_f4fe7504e713230007a64caac2f6a9d0</table>
+        <value>{{step[57922c91-13a1-41c2-90ed-b986ff0244fd].response_stream}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</action>
+        <cid>7af1bacb-da72-425d-a205-0be6f66cdae1</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Pagination Setup step</label>
+        <order>4</order>
+        <outputs/>
+        <section>DATASTREAM_REQUEST</section>
+        <step_type display_value="Pagination Setup">737c7540e713230007a64caac2f6a9b6</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>e866cc16dbd9f4104e2e9db2ca96199d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:06:07</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e866cc16dbd9f4104e2e9db2ca96199d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e866cc16dbd9f4104e2e9db2ca96199d</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:06:07</sys_created_on>
+        <sys_id>1ab68456dbd9f4104e2e9db2ca961975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:06:07</sys_updated_on>
+        <value>(function paginate(variables, pageResponse) {&#13;
+    // The script determines whether to retrieve another&#13;
+    // page of glacier records from the web service.&#13;
+&#13;
+    // Calculate how many records to retrieve then determine&#13;
+	  // the ordinal number of the last glacier to get&#13;
+    var totalRecs = parseInt(variables.glaciers_per_page) * parseInt(variables.num_pages);&#13;
+    var lastRec = parseInt(variables.start_with) + totalRecs;&#13;
+&#13;
+    // If the value of variables.glacier_number is less than the&#13;
+	  // ordinal of the last record to get, get another page.   &#13;
+    // If not, set variables.getNextPage to false.&#13;
+    if (parseInt(variables.glacier_number) &lt; lastRec) {&#13;
+        variables.getNextPage = true;&#13;
+    } else {&#13;
+        variables.getNextPage = false;&#13;
+    }&#13;
+})(variables, pageResponse);</value>
+        <variable display_value="Pagination Script">f68d35c0e713230007a64caac2f6a959</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e866cc16dbd9f4104e2e9db2ca96199d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>pagination_config</field>
+        <id>e866cc16dbd9f4104e2e9db2ca96199d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>3466cc16dbd9f4104e2e9db2ca9619ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:05:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_737c7540e713230007a64caac2f6a9b6</table>
+        <value>[{"name":"getNextPage","initial_value":"false","value_from":"script","extract_using":"","extract_expression":"","read_only":true},{"name":"glacier_number","initial_value":"{{step[6cbdeea3-fadf-4903-81d0-3d3c91003123].first_glacier_to_get}}","value_from":"response_body","extract_using":"JSON","extract_expression":"$.result.nextRec"},{"name":"glaciers_per_page","initial_value":"{{step[6cbdeea3-fadf-4903-81d0-3d3c91003123].glaciers_per_page}}","value_from":"script","extract_using":"","extract_expression":""},{"name":"num_pages","initial_value":"{{step[6cbdeea3-fadf-4903-81d0-3d3c91003123].number_of_pages}}","value_from":"script","extract_using":"","extract_expression":""},{"name":"start_with","initial_value":"{{step[6cbdeea3-fadf-4903-81d0-3d3c91003123].first_glacier_to_get}}","value_from":"script","extract_using":"","extract_expression":""}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>pagination_script</field>
+        <id>e866cc16dbd9f4104e2e9db2ca96199d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:06:07</sys_created_on>
+        <sys_id>96b68456dbd9f4104e2e9db2ca961975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:06:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_737c7540e713230007a64caac2f6a9b6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=e866cc16dbd9f4104e2e9db2ca96199d^sys_idNOT IN15a60456dbd9f4104e2e9db2ca961933,2066cc16dbd9f4104e2e9db2ca9619a1,41a60456dbd9f4104e2e9db2ca961928,7066cc16dbd9f4104e2e9db2ca9619a7,c9a60456dbd9f4104e2e9db2ca96192d"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4ad7d407-51d0-4956-99d9-ce4daf3de381</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>start_with</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>start_with</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pagination Setup step">e866cc16dbd9f4104e2e9db2ca96199d</model>
+        <model_id>e866cc16dbd9f4104e2e9db2ca96199d</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_e866cc16dbd9f4104e2e9db2ca96199d</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:05:45</sys_created_on>
+        <sys_id>15a60456dbd9f4104e2e9db2ca961933</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:06:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1bbf8e38-db09-4b4c-a892-2d68bba4948b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>getNextPage</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>getNextPage</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pagination Setup step">e866cc16dbd9f4104e2e9db2ca96199d</model>
+        <model_id>e866cc16dbd9f4104e2e9db2ca96199d</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_e866cc16dbd9f4104e2e9db2ca96199d</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>2066cc16dbd9f4104e2e9db2ca9619a1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:06:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ec9faa6b-7fbd-46ed-839c-eef1c8986cf4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>glaciers_per_page</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>glaciers_per_page</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pagination Setup step">e866cc16dbd9f4104e2e9db2ca96199d</model>
+        <model_id>e866cc16dbd9f4104e2e9db2ca96199d</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_e866cc16dbd9f4104e2e9db2ca96199d</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:05:45</sys_created_on>
+        <sys_id>41a60456dbd9f4104e2e9db2ca961928</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:06:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=822d2438-378c-436e-b3a7-17a36108816c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>glacier_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>glacier_number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pagination Setup step">e866cc16dbd9f4104e2e9db2ca96199d</model>
+        <model_id>e866cc16dbd9f4104e2e9db2ca96199d</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_e866cc16dbd9f4104e2e9db2ca96199d</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>7066cc16dbd9f4104e2e9db2ca9619a7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:06:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=012bfa63-e1f6-4d17-aa12-bd6f18eb255b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>num_pages</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>num_pages</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pagination Setup step">e866cc16dbd9f4104e2e9db2ca96199d</model>
+        <model_id>e866cc16dbd9f4104e2e9db2ca96199d</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_e866cc16dbd9f4104e2e9db2ca96199d</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:05:45</sys_created_on>
+        <sys_id>c9a60456dbd9f4104e2e9db2ca96192d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:06:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=1422009edb99f4104e2e9db2ca961926^sys_idNOT IN37b24c52dbd9f4104e2e9db2ca961916,47f20092dbd9f4104e2e9db2ca961991,fbb28cdedb99f4104e2e9db2ca9619ca"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f5210572-4d51-4b46-8491-4d3647f63147</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>glaciers_per_page</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Glaciers per page</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:44</sys_created_on>
+        <sys_id>37b24c52dbd9f4104e2e9db2ca961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ba625f1c-d5ab-4cf3-925a-70eac19d82da</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>pages_to_get</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Pages to get</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:49:46</sys_created_on>
+        <sys_id>47f20092dbd9f4104e2e9db2ca961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:49:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=eabb8b69-8f1b-4365-9ce0-1518c3d7f3ba</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>first_glacier</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>First glacier</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:44</sys_created_on>
+        <sys_id>fbb28cdedb99f4104e2e9db2ca9619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=1422009edb99f4104e2e9db2ca961926^sys_idNOT IN00c24c52dbd9f4104e2e9db2ca961946,20ca4c1adbd9f4104e2e9db2ca9619ce,3866cc16dbd9f4104e2e9db2ca9619e5,3c66cc16dbd9f4104e2e9db2ca9619f0,4cc24c52dbd9f4104e2e9db2ca961956,843c809adbd9f4104e2e9db2ca9619d5,84c24c52dbd9f4104e2e9db2ca961940,8566cc16dbd9f4104e2e9db2ca9619f6,88c24c52dbd9f4104e2e9db2ca96194b,b066cc16dbd9f4104e2e9db2ca9619eb,c0c24c52dbd9f4104e2e9db2ca961951,ffb24c52dbd9f4104e2e9db2ca961939"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>count</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:44</sys_created_on>
+        <sys_id>00c24c52dbd9f4104e2e9db2ca961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ds_parsed_stream</element>
+        <element_prototype display_value="Parsed Stream" element="parsed_stream" name="var__m_sys_flow_step_definition_output_e83b26f68723230057a8ed4d87cb0b24">b26ca2ba8763230057a8ed4d87cb0b5b</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ds_parsed_stream</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>11</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:44</sys_created_on>
+        <sys_id>20ca4c1adbd9f4104e2e9db2ca9619ce</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:30:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_headers</element>
+        <element_prototype display_value="Response Headers" element="response_headers" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">09d4cb7347622200b4fad7527c9a71e3</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response_headers</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:38</sys_created_on>
+        <sys_id>3866cc16dbd9f4104e2e9db2ca9619e5</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:30:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_prototype display_value="Status Code" element="status_code" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a053077347622200b4fad7527c9a716e</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status_code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>9</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:39</sys_created_on>
+        <sys_id>3c66cc16dbd9f4104e2e9db2ca9619f0</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:30:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ds_output_page_variables</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ds_output_page_variables</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:45</sys_created_on>
+        <sys_id>4cc24c52dbd9f4104e2e9db2ca961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD803c809aead9f4102402ae5737299ab4,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=bded53bb-1c5e-48f6-b428-85bf59666c03</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>glacier_record</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Glacier record</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>12</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:29:59</sys_created_on>
+        <sys_id>843c809adbd9f4104e2e9db2ca9619d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:29:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,visible_in_ad=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>page_count</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Page Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:44</sys_created_on>
+        <sys_id>84c24c52dbd9f4104e2e9db2ca961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_code</element>
+        <element_prototype display_value="Error Code" element="error_code" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">d1744b7347622200b4fad7527c9a7105</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>error_code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>10</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:39</sys_created_on>
+        <sys_id>8566cc16dbd9f4104e2e9db2ca9619f6</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:30:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ds_count</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>ds_count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:44</sys_created_on>
+        <sys_id>88c24c52dbd9f4104e2e9db2ca96194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_prototype display_value="Error Message" element="error_message" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">26a48b7347622200b4fad7527c9a71c0</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>error_message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:39</sys_created_on>
+        <sys_id>b066cc16dbd9f4104e2e9db2ca9619eb</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:30:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>item</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>item</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:45</sys_created_on>
+        <sys_id>c0c24c52dbd9f4104e2e9db2ca961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,visible_in_ad=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>item_count</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Item Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="World Glaciers - LatLong">1422009edb99f4104e2e9db2ca961926</model>
+        <model_id>1422009edb99f4104e2e9db2ca961926</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:44</sys_created_on>
+        <sys_id>ffb24c52dbd9f4104e2e9db2ca961939</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_1422009edb99f4104e2e9db2ca961926^sys_idNOT IN73b24c52dbd9f4104e2e9db2ca961915,8ff20092dbd9f4104e2e9db2ca961995,fbb24c52dbd9f4104e2e9db2ca96191a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>first_glacier</element>
+        <help/>
+        <hint/>
+        <label>First glacier</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:44</sys_created_on>
+        <sys_id>73b24c52dbd9f4104e2e9db2ca961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>pages_to_get</element>
+        <help/>
+        <hint/>
+        <label>Pages to get</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:49:46</sys_created_on>
+        <sys_id>8ff20092dbd9f4104e2e9db2ca961995</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:49:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>glaciers_per_page</element>
+        <help/>
+        <hint/>
+        <label>Glaciers per page</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:44</sys_created_on>
+        <sys_id>fbb24c52dbd9f4104e2e9db2ca96191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926^sys_idNOT IN00c24c52dbd9f4104e2e9db2ca961950,4cc24c52dbd9f4104e2e9db2ca961944,4d66cc16dbd9f4104e2e9db2ca9619fa,7866cc16dbd9f4104e2e9db2ca9619ef,88c24c52dbd9f4104e2e9db2ca961955,8c3c809adbd9f4104e2e9db2ca9619d9,c0c24c52dbd9f4104e2e9db2ca96193f,c166cc16dbd9f4104e2e9db2ca9619f5,c4c24c52dbd9f4104e2e9db2ca96194a,c8c24c52dbd9f4104e2e9db2ca961967,e4ca4c1adbd9f4104e2e9db2ca9619d2,fc66cc16dbd9f4104e2e9db2ca9619e9"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ds_count</element>
+        <help/>
+        <hint/>
+        <label>ds_count</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:45</sys_created_on>
+        <sys_id>00c24c52dbd9f4104e2e9db2ca961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>page_count</element>
+        <help/>
+        <hint/>
+        <label>Page Count</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:44</sys_created_on>
+        <sys_id>4cc24c52dbd9f4104e2e9db2ca961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_code</element>
+        <help/>
+        <hint/>
+        <label>error_code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:39</sys_created_on>
+        <sys_id>4d66cc16dbd9f4104e2e9db2ca9619fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_message</element>
+        <help/>
+        <hint/>
+        <label>error_message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:39</sys_created_on>
+        <sys_id>7866cc16dbd9f4104e2e9db2ca9619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>item</element>
+        <help/>
+        <hint/>
+        <label>item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:45</sys_created_on>
+        <sys_id>88c24c52dbd9f4104e2e9db2ca961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>glacier_record</element>
+        <help/>
+        <hint/>
+        <label>Glacier record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:29:59</sys_created_on>
+        <sys_id>8c3c809adbd9f4104e2e9db2ca9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:29:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>item_count</element>
+        <help/>
+        <hint/>
+        <label>Item Count</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:44</sys_created_on>
+        <sys_id>c0c24c52dbd9f4104e2e9db2ca96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status_code</element>
+        <help/>
+        <hint/>
+        <label>status_code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:39</sys_created_on>
+        <sys_id>c166cc16dbd9f4104e2e9db2ca9619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>count</element>
+        <help/>
+        <hint/>
+        <label>count</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:44</sys_created_on>
+        <sys_id>c4c24c52dbd9f4104e2e9db2ca96194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ds_output_page_variables</element>
+        <help/>
+        <hint/>
+        <label>ds_output_page_variables</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 02:48:45</sys_created_on>
+        <sys_id>c8c24c52dbd9f4104e2e9db2ca961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 02:48:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ds_parsed_stream</element>
+        <help/>
+        <hint/>
+        <label>ds_parsed_stream</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:23:44</sys_created_on>
+        <sys_id>e4ca4c1adbd9f4104e2e9db2ca9619d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:23:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response_headers</element>
+        <help/>
+        <hint/>
+        <label>response_headers</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1422009edb99f4104e2e9db2ca961926</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-14 03:04:39</sys_created_on>
+        <sys_id>fc66cc16dbd9f4104e2e9db2ca9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="World Glaciers Spoke" source="x_663175_world_gla">18e1ccdedb59f4104e2e9db2ca961937</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="World Glaciers Spoke">18e1ccdedb59f4104e2e9db2ca961937</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-14 03:04:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>
